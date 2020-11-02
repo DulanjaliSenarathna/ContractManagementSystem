@@ -11,3 +11,6 @@ E:\ContractManagementSystem\ContractManagementSystem\bin\Debug\ContractManagemen
 E:\ContractManagementSystem\ContractManagementSystem\bin\Debug\SLRDbConnector.dll
 E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.Forms.Form_Dashboard.resources
 E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.csproj.CopyComplete
+E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.Forms.Form_AddWork.resources
+E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.UserControls.UC_Dashboard.resources
+E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.UserControls.UC_Works.resources

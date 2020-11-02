@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ContractManagementSystem.UserControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -61,5 +62,20 @@ namespace ContractManagementSystem.Forms
         {
             this.Dispose();
         }
+
+        private void addControls(UserControl uc)
+        {
+            panelControls.Controls.Clear();
+            uc.Dock = DockStyle.Fill;
+            panelControls.Controls.Add(uc);
+            uc.BringToFront();
+        }
+
+        private void btnJobs_Click(object sender, EventArgs e)
+        {
+            UC_Works uw = new UC_Works();
+            addControls(uw);
+        }
+
     }
 }

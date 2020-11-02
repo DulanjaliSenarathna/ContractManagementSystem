@@ -1,4 +1,7 @@
-﻿namespace ContractManagementSystem.Forms
+﻿using ContractManagementSystem.UserControls;
+using System;
+
+namespace ContractManagementSystem.Forms
 {
     partial class Form_Dashboard
     {
@@ -38,8 +41,8 @@
             this.btnUsers = new System.Windows.Forms.Button();
             this.btnExpense = new System.Windows.Forms.Button();
             this.btnPurchase = new System.Windows.Forms.Button();
-            this.btnSaleBooks = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
+            this.btnJobs = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.panelSide = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -176,37 +179,39 @@
             this.btnPurchase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPurchase.UseVisualStyleBackColor = true;
             // 
-            // btnSaleBooks
+            // btnJobs
             // 
-            this.btnSaleBooks.FlatAppearance.BorderSize = 0;
-            this.btnSaleBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaleBooks.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaleBooks.ForeColor = System.Drawing.Color.White;
-            this.btnSaleBooks.Image = ((System.Drawing.Image)(resources.GetObject("btnSaleBooks.Image")));
-            this.btnSaleBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaleBooks.Location = new System.Drawing.Point(12, 205);
-            this.btnSaleBooks.Name = "btnSaleBooks";
-            this.btnSaleBooks.Size = new System.Drawing.Size(203, 60);
-            this.btnSaleBooks.TabIndex = 2;
-            this.btnSaleBooks.Text = "     Assign Jobs";
-            this.btnSaleBooks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSaleBooks.UseVisualStyleBackColor = true;
+            this.btnJobs.FlatAppearance.BorderSize = 0;
+            this.btnJobs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJobs.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJobs.ForeColor = System.Drawing.Color.White;
+            this.btnJobs.Image = ((System.Drawing.Image)(resources.GetObject("btnJobs.Image")));
+            this.btnJobs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnJobs.Location = new System.Drawing.Point(12, 205);
+            this.btnJobs.Name = "btnJobs";
+            this.btnJobs.Size = new System.Drawing.Size(203, 60);
+            this.btnJobs.TabIndex = 2;
+            this.btnJobs.Text = "     Assign Jobs";
+            this.btnJobs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnJobs.UseVisualStyleBackColor = true;
+            this.btnJobs.Click += new System.EventHandler(this.btnJobs_Click);
             // 
-            // btnHome
+            // btnDashboard
             // 
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(11, 140);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(203, 60);
-            this.btnHome.TabIndex = 2;
-            this.btnHome.Text = "     Dashboard";
-            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.Location = new System.Drawing.Point(11, 140);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(203, 60);
+            this.btnDashboard.TabIndex = 2;
+            this.btnDashboard.Text = "     Dashboard";
+            this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // panelLeft
             // 
@@ -217,8 +222,8 @@
             this.panelLeft.Controls.Add(this.btnUsers);
             this.panelLeft.Controls.Add(this.btnExpense);
             this.panelLeft.Controls.Add(this.btnPurchase);
-            this.panelLeft.Controls.Add(this.btnSaleBooks);
-            this.panelLeft.Controls.Add(this.btnHome);
+            this.panelLeft.Controls.Add(this.btnJobs);
+            this.panelLeft.Controls.Add(this.btnDashboard);
             this.panelLeft.Controls.Add(this.panel3);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
@@ -412,6 +417,12 @@
 
         }
 
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            UC_Dashboard ud = new UC_Dashboard();
+            addControls(ud);
+        }
+
         #endregion
 
         private System.Windows.Forms.Label label3;
@@ -422,8 +433,8 @@
         private System.Windows.Forms.Button btnUsers;
         private System.Windows.Forms.Button btnExpense;
         private System.Windows.Forms.Button btnPurchase;
-        private System.Windows.Forms.Button btnSaleBooks;
-        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Button btnJobs;
+        private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Panel panelLeft;
         private System.Windows.Forms.Panel panelSide;
         private System.Windows.Forms.Panel panel3;

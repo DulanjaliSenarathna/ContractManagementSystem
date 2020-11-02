@@ -241,7 +241,7 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnSaleBooks.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnJobs.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAE4SURBVEhL7ZY9SkNBGEUfqMFVBIK7ELHSzlpdg9hZ2CgEbdyAG9DY2NmoS/FnDS5ARMZzZ+4L
@@ -252,7 +252,7 @@
         mUOofysHeNhC7a/4yt+iqj4AYSEYqZg/75sAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnHome.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnDashboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAXtJREFUSEvt
         1E8oBGEYx/HdnG05bDk4yMXmolbakwMXJJTSnt2Ug4PCyYk7IVKObg5qlRNlL1ISB+Xgz1UhDqSQ8X1m
