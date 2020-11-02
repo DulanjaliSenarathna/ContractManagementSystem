@@ -1,0 +1,13 @@
+E:\ContractManagementSystem\ContractManagementSystem\bin\Debug\ContractManagementSystem.exe
+E:\ContractManagementSystem\ContractManagementSystem\bin\Debug\ContractManagementSystem.pdb
+E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.csprojAssemblyReference.cache
+E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.Form1.resources
+E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.Properties.Resources.resources
+E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.csproj.GenerateResource.cache
+E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.csproj.CoreCompileInputs.cache
+E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.exe
+E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.pdb
+E:\ContractManagementSystem\ContractManagementSystem\bin\Debug\ContractManagementSystem.exe.config
+E:\ContractManagementSystem\ContractManagementSystem\bin\Debug\SLRDbConnector.dll
+E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.Forms.Form_Dashboard.resources
+E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.csproj.CopyComplete

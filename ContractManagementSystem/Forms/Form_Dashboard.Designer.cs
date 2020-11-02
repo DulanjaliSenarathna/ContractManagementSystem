@@ -1,6 +1,6 @@
-﻿namespace ContractManagementSystem
+﻿namespace ContractManagementSystem.Forms
 {
-    partial class Form1
+    partial class Form_Dashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Form_Dashboard
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Name = "Form_Dashboard";
+            this.Text = "Form_Dashboard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-
