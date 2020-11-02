@@ -43,7 +43,7 @@ namespace ContractManagementSystem
                     using (Form_Dashboard fd = new Form_Dashboard())
                     {
                         fd.ShowDialog();
-                        this.Close();
+                       
                     }
                 }
 
