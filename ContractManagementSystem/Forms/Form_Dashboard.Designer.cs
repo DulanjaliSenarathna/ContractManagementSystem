@@ -40,14 +40,15 @@ namespace ContractManagementSystem.Forms
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
             this.btnExpense = new System.Windows.Forms.Button();
-            this.btnPurchase = new System.Windows.Forms.Button();
+            this.btnContractors = new System.Windows.Forms.Button();
             this.btnJobs = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelSide = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -58,7 +59,6 @@ namespace ContractManagementSystem.Forms
             this.panelControls = new System.Windows.Forms.Panel();
             this.timerTime = new System.Windows.Forms.Timer(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelLeft.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -163,21 +163,22 @@ namespace ContractManagementSystem.Forms
             this.btnExpense.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExpense.UseVisualStyleBackColor = true;
             // 
-            // btnPurchase
+            // btnContractors
             // 
-            this.btnPurchase.FlatAppearance.BorderSize = 0;
-            this.btnPurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPurchase.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPurchase.ForeColor = System.Drawing.Color.White;
-            this.btnPurchase.Image = ((System.Drawing.Image)(resources.GetObject("btnPurchase.Image")));
-            this.btnPurchase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPurchase.Location = new System.Drawing.Point(12, 271);
-            this.btnPurchase.Name = "btnPurchase";
-            this.btnPurchase.Size = new System.Drawing.Size(203, 60);
-            this.btnPurchase.TabIndex = 2;
-            this.btnPurchase.Text = "     Contractors";
-            this.btnPurchase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPurchase.UseVisualStyleBackColor = true;
+            this.btnContractors.FlatAppearance.BorderSize = 0;
+            this.btnContractors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContractors.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContractors.ForeColor = System.Drawing.Color.White;
+            this.btnContractors.Image = ((System.Drawing.Image)(resources.GetObject("btnContractors.Image")));
+            this.btnContractors.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContractors.Location = new System.Drawing.Point(12, 271);
+            this.btnContractors.Name = "btnContractors";
+            this.btnContractors.Size = new System.Drawing.Size(203, 60);
+            this.btnContractors.TabIndex = 2;
+            this.btnContractors.Text = "     Contractors";
+            this.btnContractors.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnContractors.UseVisualStyleBackColor = true;
+            this.btnContractors.Click += new System.EventHandler(this.btnContractors_Click);
             // 
             // btnJobs
             // 
@@ -221,7 +222,7 @@ namespace ContractManagementSystem.Forms
             this.panelLeft.Controls.Add(this.btnSettings);
             this.panelLeft.Controls.Add(this.btnUsers);
             this.panelLeft.Controls.Add(this.btnExpense);
-            this.panelLeft.Controls.Add(this.btnPurchase);
+            this.panelLeft.Controls.Add(this.btnContractors);
             this.panelLeft.Controls.Add(this.btnJobs);
             this.panelLeft.Controls.Add(this.btnDashboard);
             this.panelLeft.Controls.Add(this.panel3);
@@ -230,6 +231,22 @@ namespace ContractManagementSystem.Forms
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(215, 700);
             this.panelLeft.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(8, 468);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(203, 60);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "     Reports";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // panelSide
             // 
@@ -251,22 +268,6 @@ namespace ContractManagementSystem.Forms
             this.panel3.Size = new System.Drawing.Size(215, 140);
             this.panel3.TabIndex = 0;
             // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(8, 468);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 60);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "     Reports";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
@@ -280,6 +281,17 @@ namespace ContractManagementSystem.Forms
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1065, 92);
             this.panel2.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(534, 33);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(101, 18);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Dashboard";
             // 
             // label7
             // 
@@ -380,17 +392,6 @@ namespace ContractManagementSystem.Forms
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(534, 33);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 18);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Dashboard";
-            // 
             // Form_Dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -432,7 +433,7 @@ namespace ContractManagementSystem.Forms
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Button btnUsers;
         private System.Windows.Forms.Button btnExpense;
-        private System.Windows.Forms.Button btnPurchase;
+        private System.Windows.Forms.Button btnContractors;
         private System.Windows.Forms.Button btnJobs;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Panel panelLeft;

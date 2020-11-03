@@ -14,3 +14,4 @@ E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagemen
 E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.Forms.Form_AddWork.resources
 E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.UserControls.UC_Dashboard.resources
 E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.UserControls.UC_Works.resources
+E:\ContractManagementSystem\ContractManagementSystem\obj\Debug\ContractManagementSystem.UserControls.UC_Contractors.resources

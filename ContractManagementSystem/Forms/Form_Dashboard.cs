@@ -77,5 +77,10 @@ namespace ContractManagementSystem.Forms
             addControls(uw);
         }
 
+        private void btnContractors_Click(object sender, EventArgs e)
+        {
+            UC_Contractors uc = new UC_Contractors();
+            addControls(uc);
+        }
     }
 }
